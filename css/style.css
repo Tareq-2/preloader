@@ -1,0 +1,29 @@
+#preloader{
+position: fixed;
+background-color: #333;
+inset: 0;
+z-index: 9999999;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+#preloader .frame{
+    width: 200px;
+    height: 200px;
+    border: 5px solid rgb(206, 155, 60);
+    border-top-color: transparent;
+    border-radius: 50%;
+    box-shadow: 0 0 10px 0 rgb(206, 155, 60) ;
+    animation-name: preloader;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+@keyframes preloader{
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
